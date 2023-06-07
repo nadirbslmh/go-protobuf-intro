@@ -11,3 +11,9 @@ Simple application using Protocol Buffers in Go.
 ```sh
 go run main.go
 ```
+
+3. If protocol buffer file is modified, generate the Go code.
+
+```sh
+protoc -I=protobuf --go_out=./bookpb/ protobuf/book.proto
+```
